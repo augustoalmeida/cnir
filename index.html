@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/46763">
+
+	<title>CNIR</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- estilo cnir -->
+	<link rel="stylesheet" href="css/cnir.css">
+
+	<style>
+		#footer-brasil {
+			background: none repeat scroll 0% 0% #00420c;
+			padding: 1em 0px;
+			max-width: 100%;
+		}
+	</style>
+
+</head>
+<body>
+	<!-- barra de governo -->
+	<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
+		<ul id="menu-barra-temp" style="list-style:none;">
+			<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li> 
+			<li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
+		</ul>
+	</div>
+
+	<article>
+		<div class="container-fluid">
+
+			<!-- título -->
+			<h1 class="titulo">Título da página</h1>
+
+			<!-- subtítulo -->
+			<h2 class="subtitulo">Subtítulo</h2>
+
+			<!-- subtítulo com collapse -->
+			<h2 class="subtitulo">
+				Subtítulo com collapse
+
+				<!-- link collapse -->
+				<a href="#instrucoes" class="pull-right" data-toggle="collapse">
+					collapse
+					<span class="caret"></span>
+				</a>
+			</h2>
+
+			<!-- conteúdo collapse -->
+			<div class="collapse" id="instrucoes">
+				<p>Conteúdo do collapse</p>
+				<p>a) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>b) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>c) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+
+			<!-- texto -->
+			<p>Texto padrão - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<!-- listagem -->
+			<ul>
+				<li>Listagem padrão</li>
+				<li>Listagem padrão</li>
+				<li>Listagem padrão</li>
+			</ul>
+
+			<!-- tabela -->
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Título</th>
+						<th>Título</th>
+						<th>Título</th>
+						<th>Título</th>
+						<th>Título</th>
+						<th>Título</th>
+						<th>Título</th>
+						<th>Título</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<a href="">Link normal</a>
+						</td>
+						<td>Dado</td>
+						<td>Dado</td>
+						<td>Dado</td>
+						<td>Dado</td>
+						<td>Dado</td>
+						<td>
+							<!-- link popover -->
+							<button type="buttun" class="btn btn-link" data-toggle="popover" data-container="body" data-placement="top" data-content="<ul><li>Item 1</li><li>Item 2</li></ul>" data-html="true">Link popover</button>
+						</td>
+						<td>
+							<!-- link popover -->
+							<button type="buttun" class="btn btn-link" data-toggle="popover" data-container="body" data-placement="top" data-content="<ul><li>Item 1</li><li>Item 2</li></ul>" data-html="true">Link popover</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="">Link normal</a>
+						</td>
+						<td>Dado</td>
+						<td>Dado</td>
+						<td>Dado</td>
+						<td>Dado</td>
+						<td>Dado</td>
+						<td>
+							<!-- link popover -->
+							<button type="buttun" class="btn btn-link" data-toggle="popover" data-container="body" data-placement="top" data-content="<ul><li>Item 1</li><li>Item 2</li></ul>" data-html="true">Link popover</button>
+						</td>
+						<td>
+							<!-- link popover -->
+							<button type="buttun" class="btn btn-link" data-toggle="popover" data-container="body" data-placement="top" data-content="<ul><li>Item 1</li><li>Item 2</li></ul>" data-html="true">Link popover</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- paginação -->
+			<nav aria-label="Page navigation">
+				<ul class="pagination">
+					<li>
+						<a href="#" aria-label="Previous" class="first">
+							<span>&laquo; próximo</span>
+						</a>
+					</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li>
+						<a href="#" aria-label="Next" class="last">
+							<span>anterior &raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- filtro -->
+			<div class="panel panel-default">
+
+				<!-- filtro topo -->
+				<div class="panel-heading">
+
+					<!-- título -->
+					<strong>Filtrar consulta</strong>
+
+					<!-- link collapse -->
+					<a href="#filtro" data-toggle="collapse">
+						collapse
+						<span class="caret"></span>
+					</a>
+				</div>
+
+				<!-- filtro corpo com collapse -->
+				<div class="panel-body collapse in" id="filtro">
+
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="input-1">Input</label>
+								<input class="form-control" type="text" id="input-1" placeholder="texto" />
+							</div>
+						</div>
+
+						<div class="col-sm-1">
+							<div class="form-group">
+								<label for="select-1">Select</label>
+								<select class="form-control" id="select-1">
+									<option>Selecione</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-2">
+							<div class="form-group">
+								<label for="input-2">Input</label>
+								<input class="form-control" type="text" id="input-2" placeholder="texto" />
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="form-inline">
+							<p class="control-label">Formulário em linha</p>
+							<div class="form-group">
+								<label for="input-3">Label</label>
+								<input class="form-control" type="text" id="input-3" placeholder="Texto" />
+								<label for="input-4">Label</label>
+								<input class="form-control" type="text" id="input-4" placeholder="Texto" />
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="input-5">Input</label>
+								<input class="form-control" type="text" id="input-5" placeholder="Texto" />
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="input-6">Input</label>
+								<input class="form-control" type="text" id="input-6" placeholder="texto" />
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="select-2">Select</label>
+								<select class="form-control" id="select-2">
+									<option>Selecione</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="select-3">Select</label>
+								<select class="form-control" id="select-3">
+									<option>Selecione</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="form-group">
+								<label for="select-4">Select</label>
+								<select class="form-control" id="select-4">
+									<option>Selecione</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="select-5">Select</label>
+								<select class="form-control" id="select-5">
+									<option>Selecione</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-7">
+							<div class="form-inline">
+								<p class="control-label">Formulário em linha</p>
+								<div class="form-group">
+									<label for="input-7">Label</label>
+									<input class="form-control" type="text" id="input-7" placeholder="Texto" />
+									<label for="input-8">Label</label>
+									<input class="form-control" type="text" id="input-8" placeholder="Texto" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- filtro rodape -->
+				<div class="panel-footer">
+					<button class="btn btn-default" type="reset">Limpar campos</button>
+					<button class="btn btn-primary" type="submit">Filtrar</button>
+				</div>
+			</div>
+
+			<!-- filtro com tamanho personalizado -->
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="panel panel-default">
+
+						<!-- filtro corpo -->
+						<div class="panel-body">
+							<label for="input-9">Input</label>
+							<input class="form-control" type="text" placeholder="Texto" id="input-9" />
+						</div>
+
+						<!-- filtro rodape -->
+						<div class="panel-footer">
+							<button class="btn btn-primary" type="button">Pesquisar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- abas -->
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Aba 1</a></li>
+				<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Aba 2</a></li>
+				<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Aba 3</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="tab1">
+					<p>
+						<strong>Campo:</strong>
+						<span>Valor</span>
+					</p>
+
+					<p>
+						<strong>Campo:</strong>
+						<span>Valor</span>
+					</p>
+
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Título</th>
+								<th>Título</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Dado</td>
+								<td>Dado</td>
+							</tr>
+							<tr>
+								<td>Dado</td>
+								<td>Dado</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="tab2">Conteúdo da aba.</div>
+				<div role="tabpanel" class="tab-pane" id="tab3">Conteúdo da aba.</div>
+			</div>
+
+		</div>
+	</article>
+
+	<footer>
+		<div id="footer-brasil"></div>
+	</footer>
+
+	<!-- barra de governo -->
+	<script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+
+	<!-- jquery v3.1.1 -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- cnir.js -->
+	<script src="js/cnir.js"></script>
+
+</body>
+</html>
