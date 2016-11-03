@@ -196,3 +196,46 @@ header {
     header .logo .subordinacao {
       font-size: 14px;
       text-transform: uppercase; }
+
+/* contraste */
+.contraste {
+  background-color: #000;
+  color: #fff; }
+  .contraste a {
+    color: #ff0; }
+  .contraste header {
+    background: transparent; }
+    .contraste header nav {
+      background-color: #333; }
+  .contraste .titulo {
+    border-color: #fff;
+    background-color: transparent;
+    color: #fff; }
+  .contraste .subtitulo {
+    border-color: #fff;
+    color: #fff; }
+  .contraste .table thead tr th {
+    background-color: #333;
+    color: #fff; }
+  .contraste .table thead tr:first-child th {
+    border-top: 1px solid #fff; }
+  .contraste .table tbody tr:nth-child(odd), .contraste .table tbody tr:nth-child(even) {
+    background-color: transparent; }
+  .contraste .btn-link {
+    color: #ff0; }
+  .contraste .form-inline label {
+    background-color: #333; }
+  .contraste .panel {
+    background-color: transparent; }
+    .contraste .panel-heading {
+      color: #fff; }
+    .contraste .panel-footer {
+      background-color: transparent; }
+  .contraste .nav-tabs > li > a {
+    background-color: #333;
+    color: #ff0; }
+  .contraste .nav-tabs > li.active > a, .contraste .nav-tabs > li.active > a:focus, .contraste .nav-tabs > li.active > a:hover {
+    background-color: transparent;
+    color: #ff0; }
+  .contraste .tab-content {
+    background-color: transparent; }
