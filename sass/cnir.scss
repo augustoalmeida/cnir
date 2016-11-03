@@ -4,8 +4,8 @@ h1 {
   border-top: 4px solid #006699;
   color: #006699;
   font-size: 20px;
-  min-height: 48px;
-  padding: 10px 10px 0;
+  min-height: 60px;
+  padding: 5px 10px 10px;
 }
 
 /* subtitulo da página*/
@@ -179,22 +179,31 @@ ul, ol {
 /* abas */
 .nav-tabs {
   border-color: #D4D5D7;
+  
+  > li {
+    > a {
+      background-color: #D7D7D7;
+      color: #333;
+      margin-right: 5px;
+      min-width: 150px;
+      padding-bottom: 6px;
+      padding-top: 6px;
+      text-align: center;
+    }
+    
+    &.active {
+      > a {
+        &,
+        &:focus,
+        &:hover {
+          background-color: #EEEFF1;
+          border-color: #D4D5D7;
+        }
+      }
+    }    
+  }
 }
-.nav-tabs > li > a {
-  background-color: #D7D7D7;
-  color: #333;
-  margin-right: 5px;
-  min-width: 150px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  text-align: center;
-}
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li.active > a:hover {
-  background-color: #EEEFF1;
-  border-color: #D4D5D7;
-}
+
 .tab-content {
   background-color: #EEEFF1;
   border-bottom: 1px solid #D4D5D7;
@@ -204,26 +213,117 @@ ul, ol {
   padding: 15px;
 }
 
-.tab .listagem {
-  margin: 0; }
-  .tab .listagem li {
-    display: inline-block; }
-    .tab .listagem li a {
-      background-color: #D7D7D7;
-      border-top: 1px solid #D4D5D7;
-      border-left: 1px solid #D4D5D7;
-      border-right: 1px solid #D4D5D7;
-      border-radius: 4px 4px 0 0;
-      color: #000;
-      display: inline-block;
-      padding: .5em 4em; }
-      .tab .listagem li a.active {
-        background-color: #EEEFF1; }
-  .tab .conteudo {
-    background-color: #EEEFF1;
-    border: 1px solid #D4D5D7;
-    border-radius: 0 4px 4px 4px;
-    margin-bottom: 2em;
-    padding: 2em; }
-  .tab .conteudo table:nth-last-child(1) {
-    margin-bottom: 0; }
+/* topo */
+header {
+  background: radial-gradient(ellipse at center, #19882c 1%, #025310 100%);
+  color: #fff;
+  
+  ul {
+    font-size: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  a {
+    color: #fff;
+  }
+  
+  nav {
+    background-color: #00420c;
+    padding: 5px 15px;
+    text-align: right;
+    
+    li {
+      border-right: 1px solid #6c9072;
+      padding: 0 10px;
+      
+      &:last-child {
+        border: 0;
+        padding-right: 0;
+      }
+    }
+    
+    a {
+      font-size: 12px;
+    }
+  }
+  
+  .listas {
+    margin: 10px 0;
+  }
+  
+  .lista {
+    &-accesskeys {
+      li {
+        padding-left: 10px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+        
+        span {
+          background-color: #9ED5AB;
+          color: #006600;
+          padding: 0 3px;
+          vertical-align: middle;
+        }
+      }
+      
+      a {
+        font-size: 10px;
+      }
+    }
+    
+    &-actions {
+      border-bottom: 1px dotted #9bc2a3;
+      
+      li {
+        padding-right: 20px;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      a {
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+      
+      @media (max-width: 480px) {
+        float: none !important;
+        text-align: center;
+      }
+    }
+  }
+  
+  .logo {
+    padding: 10px 0 20px;
+
+    h1 {
+      background: transparent;
+      border: 0;
+      color: #fff;
+      margin: 0;
+      min-height: 0;
+      padding: 0;
+    }
+
+    .orgao {
+      font-size: 12px;
+    }
+    
+    .nome {
+      font-size: 40px;
+    }
+    
+    .subordinacao {
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+}
