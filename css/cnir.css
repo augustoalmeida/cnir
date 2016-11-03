@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* título */
-h1 {
+.titulo {
   background-color: #eeeff1;
   border-top: 4px solid #006699;
   color: #006699;
@@ -9,16 +9,11 @@ h1 {
   padding: 5px 10px 10px; }
 
 /* subtitulo da página*/
-h2 {
+.subtitulo {
   border-bottom: 1px solid #c9c9c9;
   font-size: 1em;
   font-weight: bold;
   padding: 0 0 5px 0; }
-
-/* outros títulos */
-h3, h4, h5, h6 {
-  font-size: 1em;
-  font-weight: bold; }
 
 /* listas */
 ul, ol {
@@ -201,3 +196,46 @@ header {
     header .logo .subordinacao {
       font-size: 14px;
       text-transform: uppercase; }
+
+/* contraste */
+.contraste {
+  background-color: #000;
+  color: #fff; }
+  .contraste a {
+    color: #ff0; }
+  .contraste header {
+    background: transparent; }
+    .contraste header nav {
+      background-color: #333; }
+  .contraste .titulo {
+    border-color: #fff;
+    background-color: transparent;
+    color: #fff; }
+  .contraste .subtitulo {
+    border-color: #fff;
+    color: #fff; }
+  .contraste .table thead tr th {
+    background-color: #333;
+    color: #fff; }
+  .contraste .table thead tr:first-child th {
+    border-top: 1px solid #fff; }
+  .contraste .table tbody tr:nth-child(odd), .contraste .table tbody tr:nth-child(even) {
+    background-color: transparent; }
+  .contraste .btn-link {
+    color: #ff0; }
+  .contraste .form-inline label {
+    background-color: #333; }
+  .contraste .panel {
+    background-color: transparent; }
+    .contraste .panel-heading {
+      color: #fff; }
+    .contraste .panel-footer {
+      background-color: transparent; }
+  .contraste .nav-tabs > li > a {
+    background-color: #333;
+    color: #ff0; }
+  .contraste .nav-tabs > li.active > a, .contraste .nav-tabs > li.active > a:focus, .contraste .nav-tabs > li.active > a:hover {
+    background-color: transparent;
+    color: #ff0; }
+  .contraste .tab-content {
+    background-color: transparent; }

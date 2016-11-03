@@ -1,5 +1,5 @@
 /* título */
-h1 {
+.titulo {
   background-color: #eeeff1;
   border-top: 4px solid #006699;
   color: #006699;
@@ -9,17 +9,11 @@ h1 {
 }
 
 /* subtitulo da página*/
-h2 {
+.subtitulo {
   border-bottom: 1px solid #c9c9c9;
   font-size: 1em;
   font-weight: bold;
   padding: 0 0 5px 0;
-}
-
-/* outros títulos */
-h3, h4, h5, h6 {
-  font-size: 1em;
-  font-weight: bold;
 }
 
 /* listas */
@@ -328,5 +322,103 @@ header {
       font-size: 14px;
       text-transform: uppercase;
     }
+  }
+}
+
+/* contraste */
+.contraste {
+  background-color: #000;
+  color: #fff;
+
+  a {
+    color: #ff0;
+  }
+
+  header {
+    background: transparent;
+
+    nav {
+      background-color: #333;
+    }
+  }
+
+  .titulo {
+    border-color: #fff;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .subtitulo {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  .table {
+    thead tr {
+      th {
+        background-color: #333;
+        color: #fff;
+      }
+
+      &:first-child {
+        th {
+          border-top: 1px solid #fff;
+        }
+      }
+    }
+
+    tbody tr {
+      &:nth-child(odd), &:nth-child(even) {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .btn {
+    &-link {
+      color: #ff0;
+    }
+  }
+
+  .form-inline {
+    label {
+      background-color: #333;
+    }
+  }
+
+  .panel {
+    background-color: transparent;
+
+    &-heading {
+      color: #fff;
+    }
+
+    &-footer {
+      background-color: transparent;
+    }
+  }
+
+  .nav-tabs {
+    > li {
+      > a {
+        background-color: #333;
+        color: #ff0;
+      }
+
+      &.active {
+        > a {
+          &,
+          &:focus,
+          &:hover {
+            background-color: transparent;
+            color: #ff0;
+          }
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    background-color: transparent;
   }
 }
