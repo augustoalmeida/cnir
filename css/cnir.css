@@ -1,4 +1,23 @@
 @charset "UTF-8";
+/* breadcrumbs */
+.breadcrumbs {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.breadcrumbs .aqui {
+  float: left;
+  margin-right: .5em;
+}
+
+/* breadcrumb */
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+}
+.breadcrumb > li + li:before {
+  content: ">";
+}
+
 /* título */
 .titulo {
   background-color: #eeeff1;
@@ -19,7 +38,8 @@
 }
 
 /* listas */
-ul, ol {
+ul,
+ol {
   padding-left: 2em;
 }
 
@@ -101,7 +121,8 @@ ul, ol {
 }
 
 /* paginação */
-.pagination .first, .pagination .last {
+.pagination .first,
+.pagination .last {
   border: 0;
 }
 .pagination > li > a {
