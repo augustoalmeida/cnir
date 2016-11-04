@@ -21,7 +21,7 @@
   </style>
 
 </head>
-<body>
+<body class="logado">
   <!-- barra de governo -->
   <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
     <ul id="menu-barra-temp" style="list-style:none;">
@@ -72,16 +72,35 @@
         </a>
       </div>
     </div>
+
     <nav id="menu">
       <div class="container">
-        <ul>
-          <li><a href="">Acessar</a></li>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Como acessar</a></li>
-          <li><a href="">Legislação</a></li>
-          <li><a href="">Dados abertos</a></li>
-          <li><a href="">Ajuda</a></li>
-        </ul>
+        <div class="pull-right">
+          <div class="usuario-logado">
+            <div class="dropdown">
+              <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="nome">Joãozinho da Silva</span>
+                <img src="" alt="Joãozinho da Silva" class="foto" />
+                <span class="sem-foto">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa fa-user fa-stack-1x"></i>
+                  </span>
+                </span>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+                <li><a href="">Alterar Senha</a></li>
+                <li><a href="">Alterar Foto</a></li>
+                <li><a href="">Trocar Habilitação</a></li>
+                <li><a href="">Notificações do sistema</a></li>
+                <li><a href="">Ajuda do sistema</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="">Encerar sessão</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   </header>

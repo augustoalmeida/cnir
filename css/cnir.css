@@ -43,6 +43,66 @@ ol {
   padding-left: 2em;
 }
 
+.listas {
+  margin: 10px 0;
+}
+
+[class*="lista-"] ul {
+  font-size: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+[class*="lista-"] li {
+  display: inline-block;
+}
+
+.lista-accesskeys li {
+  padding-left: 10px;
+}
+.lista-accesskeys li:first-child {
+  padding-left: 0;
+}
+.lista-accesskeys li span {
+  background-color: #9ED5AB;
+  color: #006600;
+  padding: 0 3px;
+  vertical-align: middle;
+}
+.lista-accesskeys a {
+  font-size: 10px;
+}
+.lista-actions {
+  border-bottom: 1px dotted #9bc2a3;
+}
+.lista-actions li {
+  padding-right: 20px;
+}
+.lista-actions li:last-child {
+  padding-right: 0;
+}
+.lista-actions a {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+@media (max-width: 480px) {
+  .lista-actions {
+    float: none !important;
+    text-align: center;
+  }
+}
+.lista-menu li {
+  border-right: 1px solid #6c9072;
+  padding: 0 10px;
+}
+.lista-menu li:last-child {
+  border: 0;
+  padding-right: 0;
+}
+.lista-menu a {
+  font-size: 12px;
+}
+
 /* input */
 .form-control {
   border-radius: 0;
@@ -176,77 +236,51 @@ ol {
   padding: 15px;
 }
 
+/* usuário logado */
+.logado .logo a {
+  display: flex;
+  align-items: baseline;
+}
+.logado .logo a .orgao {
+  font-size: 24px;
+  line-height: 1.1;
+  order: 1;
+}
+.logado .logo a .orgao::before {
+  content: "-";
+  margin: 0 10px;
+}
+
+.usuario-logado .nome {
+  color: #fff;
+}
+.usuario-logado .foto {
+  border-radius: 50%;
+  height: 2.25em;
+  width: 2.25em;
+}
+.usuario-logado .sem-foto .fa-user {
+  color: #333;
+}
+.usuario-logado .caret {
+  color: #fff;
+}
+
 /* topo */
 header {
   background: radial-gradient(ellipse at center, #19882c 1%, #025310 100%);
   color: #fff;
 }
-header ul {
-  font-size: 0;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-header li {
-  display: inline-block;
-}
-header a, header a:hover, header a:focus {
-  color: #fff;
-  text-decoration: none;
-}
 header nav {
   background-color: #00420c;
+  color: #333;
   margin-bottom: 20px;
   padding: 5px 15px;
   text-align: right;
 }
-header nav li {
-  border-right: 1px solid #6c9072;
-  padding: 0 10px;
-}
-header nav li:last-child {
-  border: 0;
-  padding-right: 0;
-}
-header nav a {
-  font-size: 12px;
-}
-header .listas {
-  margin: 10px 0;
-}
-header .lista-accesskeys li {
-  padding-left: 10px;
-}
-header .lista-accesskeys li:first-child {
-  padding-left: 0;
-}
-header .lista-accesskeys li span {
-  background-color: #9ED5AB;
-  color: #006600;
-  padding: 0 3px;
-  vertical-align: middle;
-}
-header .lista-accesskeys a {
-  font-size: 10px;
-}
-header .lista-actions {
-  border-bottom: 1px dotted #9bc2a3;
-}
-header .lista-actions li {
-  padding-right: 20px;
-}
-header .lista-actions li:last-child {
-  padding-right: 0;
-}
-header .lista-actions a {
-  font-size: 11px;
-  text-transform: uppercase;
-}
-@media (max-width: 480px) {
-  header .lista-actions {
-    float: none !important;
-    text-align: center;
-  }
+header [class*="lista-"] a {
+  color: #fff;
+  text-decoration: none;
 }
 header .logo {
   padding: 10px 0 20px;
@@ -258,6 +292,10 @@ header .logo h1 {
   margin: 0;
   min-height: 0;
   padding: 0;
+}
+header .logo a, header .logo a:hover, header .logo a:focus {
+  color: #fff;
+  text-decoration: none;
 }
 header .logo .orgao {
   font-size: 12px;
