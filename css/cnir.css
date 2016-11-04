@@ -5,6 +5,7 @@
   border-top: 4px solid #006699;
   color: #006699;
   font-size: 20px;
+  margin-top: 0;
   min-height: 60px;
   padding: 5px 10px 10px;
 }
@@ -19,7 +20,7 @@
 
 /* listas */
 ul, ol {
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 /* input */
@@ -174,6 +175,7 @@ header a, header a:hover, header a:focus {
 }
 header nav {
   background-color: #00420c;
+  margin-bottom: 20px;
   padding: 5px 15px;
   text-align: right;
 }
