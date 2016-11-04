@@ -1,3 +1,24 @@
+/* breadcrumbs */
+.breadcrumbs {
+  font-size: 10px;
+  text-transform: uppercase;
+
+  .aqui {
+    float: left;
+    margin-right: .5em;
+  }
+}
+
+/* breadcrumb */
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  
+  > li + li:before {
+    content: ">"
+  }
+}
+
 /* título */
 .titulo {
   background-color: #eeeff1;
