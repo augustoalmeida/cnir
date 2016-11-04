@@ -2,7 +2,6 @@
 .breadcrumbs {
   font-size: 10px;
   text-transform: uppercase;
-
   .aqui {
     float: left;
     margin-right: .5em;
@@ -13,7 +12,6 @@
 .breadcrumb {
   background-color: transparent;
   padding: 0;
-  
   > li + li:before {
     content: ">"
   }
@@ -39,8 +37,75 @@
 }
 
 /* listas */
-ul, ol {
+ul,
+ol {
   padding-left: 2em;
+}
+
+.listas {
+  margin: 10px 0;
+}
+
+[class*="lista-"] {
+  ul {
+    font-size: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+.lista {
+  &-accesskeys {
+    li {
+      padding-left: 10px;
+      &:first-child {
+        padding-left: 0;
+      }
+      span {
+        background-color: #9ED5AB;
+        color: #006600;
+        padding: 0 3px;
+        vertical-align: middle;
+      }
+    }
+    a {
+      font-size: 10px;
+    }
+  }
+  &-actions {
+    border-bottom: 1px dotted #9bc2a3;
+    li {
+      padding-right: 20px;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+    a {
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+    @media (max-width: 480px) {
+      float: none !important;
+      text-align: center;
+    }
+  }
+  &-menu {
+    li {
+      border-right: 1px solid #6c9072;
+      padding: 0 10px;
+      &:last-child {
+        border: 0;
+        padding-right: 0;
+      }
+    }
+    a {
+      font-size: 12px;
+    }
+  }
 }
 
 /* input */
@@ -54,18 +119,15 @@ ul, ol {
     font-weight: bold;
     text-transform: uppercase;
   }
-
   &-primary {
     background-color: #434A54;
     border-color: #434A54;
-
     &.focus,
     &:focus,
     &:hover {
       background-color: darken(#434A54, 10);
       border-color: darken(#434A54, 10);
     }
-
     &.active,
     &:active {
       &,
@@ -82,12 +144,10 @@ ul, ol {
 /* formulário inline */
 .form-inline {
   font-size: 0;
-
   p {
     font-size: 14px;
     line-height: 1.42857;
   }
-
   label {
     background-color: #D7D7D7;
     font-size: 14px;
@@ -97,7 +157,6 @@ ul, ol {
     padding: 7px 20px;
     vertical-align: middle;
   }
-
   .control-label {
     font-weight: bold;
     margin-bottom: 5px;
@@ -107,11 +166,9 @@ ul, ol {
 /* caixa de filtragem */
 .panel-default {
   background-color: #F2F2F2;
-
   .panel-heading {
     background-color: transparent;
   }
-
   .panel-footer {
     background-color: #D7D7D7;
   }
@@ -126,22 +183,17 @@ ul, ol {
       color: #fff;
       text-align: center;
     }
-
   }
-
   tbody tr {
     &:nth-child(odd) {
       background-color: #fff;
     }
-
     &:nth-child(even) {
       background-color: #F2F2F2;
     }
-
     td {
       border: 1px solid #BCBCBC;
       vertical-align: middle;
-
       .btn-link {
         padding: 0;
       }
@@ -151,10 +203,10 @@ ul, ol {
 
 /* paginação */
 .pagination {
-  .first, .last {
+  .first,
+  .last {
     border: 0;
   }
-
   > li > a {
     border-radius: 4px;
     margin-left: 10px;
@@ -166,25 +218,21 @@ ul, ol {
 .popover {
   background-color: #434A54;
   color: #fff;
-
   &.bottom {
     .arrow::after {
       border-bottom-color: #434A54;
     }
   }
-
   &.left {
     .arrow::after {
       border-left-color: #434A54;
     }
   }
-
   &.right {
     .arrow::after {
       border-right-color: #434A54;
     }
   }
-
   &.top {
     .arrow::after {
       border-top-color: #434A54;
@@ -195,7 +243,6 @@ ul, ol {
 /* abas */
 .nav-tabs {
   border-color: #D4D5D7;
-  
   > li {
     > a {
       background-color: #D7D7D7;
@@ -206,7 +253,6 @@ ul, ol {
       padding-top: 6px;
       text-align: center;
     }
-    
     &.active {
       > a {
         &,
@@ -216,7 +262,7 @@ ul, ol {
           border-color: #D4D5D7;
         }
       }
-    }    
+    }
   }
 }
 
@@ -229,101 +275,60 @@ ul, ol {
   padding: 15px;
 }
 
+/* usuário logado */
+.logado {
+  .logo a {
+    display: flex;
+    align-items: baseline;
+    .orgao {
+      font-size: 24px;
+      line-height: 1.1;
+      order: 1;
+      &::before {
+        content: "-";
+        margin: 0 10px;
+      }
+    }
+  }
+}
+.usuario-logado {
+  .nome {
+    color: #fff;
+  }
+  .foto {
+    border-radius: 50%;
+    height: 2.25em;
+    width: 2.25em;
+  }
+  .sem-foto {
+    .fa-user {
+      color: #333;
+    }
+  }
+  .caret {
+    color: #fff;
+  }
+}
+
 /* topo */
 header {
   background: radial-gradient(ellipse at center, #19882c 1%, #025310 100%);
   color: #fff;
-  
-  ul {
-    font-size: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  nav {
+    background-color: #00420c;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    text-align: right;
   }
-  
-  li {
-    display: inline-block;
-  }
-  
-  a {
-    &, &:hover, &:focus {
+  [class*="lista-"] {
+    a {
       color: #fff;
       text-decoration: none;
     }
   }
-  
-  nav {
-    background-color: #00420c;
-    margin-bottom: 20px;
-    padding: 5px 15px;
-    text-align: right;
-    
-    li {
-      border-right: 1px solid #6c9072;
-      padding: 0 10px;
-      
-      &:last-child {
-        border: 0;
-        padding-right: 0;
-      }
-    }
-    
-    a {
-      font-size: 12px;
-    }
-  }
-  
-  .listas {
-    margin: 10px 0;
-  }
-  
-  .lista {
-    &-accesskeys {
-      li {
-        padding-left: 10px;
-
-        &:first-child {
-          padding-left: 0;
-        }
-        
-        span {
-          background-color: #9ED5AB;
-          color: #006600;
-          padding: 0 3px;
-          vertical-align: middle;
-        }
-      }
-      
-      a {
-        font-size: 10px;
-      }
-    }
-    
-    &-actions {
-      border-bottom: 1px dotted #9bc2a3;
-      
-      li {
-        padding-right: 20px;
-        &:last-child {
-          padding-right: 0;
-        }
-      }
-
-      a {
-        font-size: 11px;
-        text-transform: uppercase;
-      }
-      
-      @media (max-width: 480px) {
-        float: none !important;
-        text-align: center;
-      }
-    }
-  }
-  
   .logo {
     padding: 10px 0 20px;
-
     h1 {
       background: transparent;
       border: 0;
@@ -332,11 +337,17 @@ header {
       min-height: 0;
       padding: 0;
     }
-
+    a {
+      &,
+      &:hover,
+      &:focus {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
     .orgao {
       font-size: 12px;
     }
-    
     .nome {
       font-size: 40px;
     }
@@ -349,7 +360,6 @@ footer {
     background-color: #034811;
     color: #fff;
     padding: 10px 0;
-
     .subordinacao {
       font-size: 14px;
       text-transform: uppercase;
@@ -361,88 +371,73 @@ footer {
 .contraste {
   background-color: #000;
   color: #fff;
-
   a {
     color: #ff0;
   }
-
   header {
     background: transparent;
-
     nav {
       background-color: #333;
     }
   }
-  
   footer {
     .footer {
       background-color: #333;
     }
   }
-
   .titulo {
     border-color: #fff;
     background-color: transparent;
     color: #fff;
   }
-
   .subtitulo {
     border-color: #fff;
     color: #fff;
   }
-
   .table {
     thead tr {
       th {
         background-color: #333;
         color: #fff;
       }
-
       &:first-child {
         th {
           border-top: 1px solid #fff;
         }
       }
     }
-
     tbody tr {
-      &:nth-child(odd), &:nth-child(even) {
+      &:nth-child(odd),
+      &:nth-child(even) {
         background-color: transparent;
       }
     }
   }
-
   .btn {
     &-link {
       color: #ff0;
     }
   }
-
   .form-inline {
     label {
       background-color: #333;
     }
   }
-
   .panel {
     background-color: transparent;
-
     &-heading {
       color: #fff;
     }
-
     &-footer {
       background-color: transparent;
     }
   }
-
   .nav-tabs {
     > li {
       > a {
         background-color: #333;
         color: #ff0;
       }
-
       &.active {
         > a {
           &,
@@ -455,7 +450,6 @@ footer {
       }
     }
   }
-
   .tab-content {
     background-color: transparent;
   }
