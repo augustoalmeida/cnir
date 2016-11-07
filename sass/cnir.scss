@@ -544,4 +544,30 @@ footer {
   .tab-content {
     background-color: transparent;
   }
+  .menu {
+    [data-toggle="dropdown"] {
+      background-color: #fff;
+    }
+
+    .dropdown-menu {
+      background-color: #fff;
+
+      > ul > li {
+        > a {
+          color: #000;
+
+          &:hover,
+          &.open {
+            background-color: #ccc;
+            box-shadow: 4px 0 0 0 #000 inset;
+          }
+        }
+
+        ul {
+          background-color: #ccc;
+          box-shadow: 4px 0 0 0 #000 inset;
+        }
+      }
+    }
+  }
 }

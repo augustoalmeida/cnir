@@ -356,3 +356,15 @@ footer .footer {
     color: #ff0; }
   .contraste .tab-content {
     background-color: transparent; }
+  .contraste .menu [data-toggle="dropdown"] {
+    background-color: #fff; }
+  .contraste .menu .dropdown-menu {
+    background-color: #fff; }
+    .contraste .menu .dropdown-menu > ul > li > a {
+      color: #000; }
+      .contraste .menu .dropdown-menu > ul > li > a:hover, .contraste .menu .dropdown-menu > ul > li > a.open {
+        background-color: #ccc;
+        box-shadow: 4px 0 0 0 #000 inset; }
+    .contraste .menu .dropdown-menu > ul > li ul {
+      background-color: #ccc;
+      box-shadow: 4px 0 0 0 #000 inset; }
