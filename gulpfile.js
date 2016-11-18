@@ -11,7 +11,8 @@ gulp.task('sass', function () {
 
 gulp.task('serve', function() {
 	browserSync.init({
-		server: '.'
+		server: '.',
+		open: false
 	});
 });
 

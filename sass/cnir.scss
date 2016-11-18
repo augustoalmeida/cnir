@@ -259,7 +259,6 @@ ol {
 
 /* formulário inline */
 .form-inline {
-  font-size: 0;
   p {
     font-size: 14px;
     line-height: 1.42857;
@@ -276,6 +275,12 @@ ol {
   .control-label {
     font-weight: bold;
     margin-bottom: 5px;
+  }
+  .form-group {
+    display: flex;
+    input {
+      flex: 1;
+    }
   }
 }
 

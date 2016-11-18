@@ -176,22 +176,27 @@ ol {
     border-color: #2c3138; }
 
 /* formulário inline */
-.form-inline {
-  font-size: 0; }
-  .form-inline p {
-    font-size: 14px;
-    line-height: 1.42857; }
-  .form-inline label {
-    background-color: #D7D7D7;
-    font-size: 14px;
-    font-weight: normal;
-    height: 34px;
-    margin: 0;
-    padding: 7px 20px;
-    vertical-align: middle; }
-  .form-inline .control-label {
-    font-weight: bold;
-    margin-bottom: 5px; }
+.form-inline p {
+  font-size: 14px;
+  line-height: 1.42857; }
+
+.form-inline label {
+  background-color: #D7D7D7;
+  font-size: 14px;
+  font-weight: normal;
+  height: 34px;
+  margin: 0;
+  padding: 7px 20px;
+  vertical-align: middle; }
+
+.form-inline .control-label {
+  font-weight: bold;
+  margin-bottom: 5px; }
+
+.form-inline .form-group {
+  display: flex; }
+  .form-inline .form-group input {
+    flex: 1; }
 
 /* caixa de filtragem */
 .panel-default {
