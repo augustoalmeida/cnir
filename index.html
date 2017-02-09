@@ -170,6 +170,22 @@
       <!-- subtítulo -->
       <h2 class="subtitulo">Subtítulo</h2>
 
+      <!-- texto -->
+      <p>Texto padrão - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+      <!-- listagem -->
+      <ul>
+        <li>Listagem padrão</li>
+        <li>Listagem padrão</li>
+        <li>Listagem padrão</li>
+      </ul>
+
+      <ol>
+        <li>Listagem ordenada</li>
+        <li>Listagem ordenada</li>
+        <li>Listagem ordenada</li>
+      </ol>
+
       <!-- subtítulo com collapse -->
       <h2 class="subtitulo">
         Subtítulo com collapse
@@ -188,16 +204,6 @@
         <p>b) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p>c) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
-
-      <!-- texto -->
-      <p>Texto padrão - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-      <!-- listagem -->
-      <ul>
-        <li>Listagem padrão</li>
-        <li>Listagem padrão</li>
-        <li>Listagem padrão</li>
-      </ul>
 
       <!-- tabela -->
       <table class="table">
@@ -227,9 +233,13 @@
               <!-- link popover -->
               <button type="button" class="btn btn-link" data-toggle="popover" data-container="body" data-placement="top" data-content="<ul><li>Item 1</li><li>Item 2</li></ul>" data-html="true">Link popover</button>
             </td>
-            <td>
-              <!-- link popover -->
-              <button type="button" class="btn btn-link" data-toggle="popover" data-container="body" data-placement="top" data-content="<ul><li>Item 1</li><li>Item 2</li></ul>" data-html="true">Link popover</button>
+            <td class="text-center">
+              <a href="">
+                <i class="fa fa-share-square-o" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </a>
             </td>
           </tr>
           <tr>
@@ -245,33 +255,56 @@
               <!-- link popover -->
               <button type="button" class="btn btn-link" data-toggle="popover" data-container="body" data-placement="top" data-content="<ul><li>Item 1</li><li>Item 2</li></ul>" data-html="true">Link popover</button>
             </td>
-            <td>
-              <!-- link popover -->
-              <button type="button" class="btn btn-link" data-toggle="popover" data-container="body" data-placement="top" data-content="<ul><li>Item 1</li><li>Item 2</li></ul>" data-html="true">Link popover</button>
+            <td class="text-center">
+              <a href="">
+                <i class="fa fa-share-square-o" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </a>
             </td>
           </tr>
         </tbody>
       </table>
 
-      <!-- paginação -->
-      <nav aria-label="Page navigation">
-        <ul class="pagination">
-          <li>
-            <a href="#" aria-label="Previous" class="first">
-              <span>&laquo; próximo</span>
-            </a>
-          </li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li>
-            <a href="#" aria-label="Next" class="last">
-              <span>anterior &raquo;</span>
-            </a>
-          </li>
-        </ul>
+      <!-- paginação e resultados por página -->
+      <nav aria-label="Page navigation" class="paginacao">
+        <div class="row">
+          <div class="col-md-7">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous" class="first">
+                  <span>&laquo; anterior</span>
+                </a>
+              </li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next" class="last">
+                  <span>próximo &raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 text-right">
+            <div class="form-inline">
+              <span>Exibir</span>
+              &nbsp;
+              <select>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+              </select>
+              &nbsp;
+              <span>Itens por página</span>
+            </div>
+          </div>
+        </div>
+
       </nav>
 
       <!-- filtro -->
@@ -488,8 +521,14 @@
   </article>
 
   <footer id="rodape">
-    <div class="footer">
-      <div class="container">
+    <div class="container">
+      <p class="text-right small">
+        <a href="">
+          <i class="fa fa-caret-up" aria-hidden="true"></i>
+          Voltar para o topo
+        </a>
+      </p>
+      <div class="footer hide">
         <span class="subordinacao">Órgão subordinado</span>
       </div>
     </div>

@@ -232,17 +232,17 @@ ol {
 /* button */
 .btn {
   &:not(.btn-link) {
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
   }
   &-primary {
-    background-color: #434A54;
-    border-color: #434A54;
+    background-color: #858585;
+    border-color: #858585;
     &.focus,
     &:focus,
     &:hover {
-      background-color: darken(#434A54, 10);
-      border-color: darken(#434A54, 10);
+      background-color: darken(#858585, 10);
+      border-color: darken(#858585, 10);
     }
     &.active,
     &:active {
@@ -250,8 +250,8 @@ ol {
       &.focus,
       &:focus,
       &:hover {
-        background-color: darken(#434A54, 10);
-        border-color: darken(#434A54, 10);
+        background-color: darken(#858585, 10);
+        border-color: darken(#858585, 10);
       }
     }
   }
@@ -301,15 +301,35 @@ hr {
 }
 
 /* paginação */
+.paginacao {
+  background: #D7D7D7;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
 .pagination {
+  margin: 0;
+  padding: 0;
+
   .first,
   .last {
+    background: transparent;
     border: 0;
+    text-transform: uppercase;
   }
+
   > li > a {
+    border-color: #aaa;
     border-radius: 4px;
     margin-left: 10px;
     padding: 2px 8px;
+  }
+
+  > li.active a {
+    background: transparent;
+    border-color: transparent;
+    color: #000;
+    font-weight: 700;
   }
 }
 

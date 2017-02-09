@@ -162,18 +162,18 @@ ol {
 
 /* button */
 .btn:not(.btn-link) {
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase; }
 
 .btn-primary {
-  background-color: #434A54;
-  border-color: #434A54; }
+  background-color: #858585;
+  border-color: #858585; }
   .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
-    background-color: #2c3138;
-    border-color: #2c3138; }
+    background-color: #6c6c6c;
+    border-color: #6c6c6c; }
   .btn-primary.active, .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover {
-    background-color: #2c3138;
-    border-color: #2c3138; }
+    background-color: #6c6c6c;
+    border-color: #6c6c6c; }
 
 /* linha separadora */
 hr {
@@ -211,14 +211,30 @@ hr {
     background-color: #D7D7D7; }
 
 /* paginação */
-.pagination .first,
-.pagination .last {
-  border: 0; }
-
-.pagination > li > a {
+.paginacao {
+  background: #D7D7D7;
   border-radius: 4px;
-  margin-left: 10px;
-  padding: 2px 8px; }
+  margin-bottom: 20px;
+  padding: 15px; }
+
+.pagination {
+  margin: 0;
+  padding: 0; }
+  .pagination .first,
+  .pagination .last {
+    background: transparent;
+    border: 0;
+    text-transform: uppercase; }
+  .pagination > li > a {
+    border-color: #aaa;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 2px 8px; }
+  .pagination > li.active a {
+    background: transparent;
+    border-color: transparent;
+    color: #000;
+    font-weight: 700; }
 
 /* popover */
 .popover {
