@@ -87,6 +87,39 @@
   }
 }
 
+/* submenu */
+.submenu {
+  background-color: #eeeff1;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    border-right: 1px solid #ccc;
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    padding: 15px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  i {
+    margin-top: 5px;
+  }
+}
+
 /* breadcrumbs */
 .breadcrumbs {
   font-size: 10px;

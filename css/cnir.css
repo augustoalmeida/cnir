@@ -51,6 +51,28 @@
   .menu.open [data-toggle="dropdown"] {
     border-radius: 4px 4px 0 0; }
 
+/* submenu */
+.submenu {
+  background-color: #eeeff1;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+  .submenu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .submenu li {
+    border-right: 1px solid #ccc;
+    text-align: center; }
+  .submenu a {
+    display: block;
+    padding: 15px; }
+    .submenu a:hover {
+      text-decoration: none; }
+  .submenu i {
+    margin-top: 5px; }
+
 /* breadcrumbs */
 .breadcrumbs {
   font-size: 10px;
