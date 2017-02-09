@@ -175,6 +175,10 @@ ol {
     background-color: #2c3138;
     border-color: #2c3138; }
 
+/* linha separadora */
+hr {
+  border-color: #ccc; }
+
 /* formulário inline */
 .form-inline p {
   font-size: 14px;
@@ -286,7 +290,7 @@ header {
     background-color: #00420c;
     color: #333;
     margin-bottom: 20px;
-    padding: 5px 15px;
+    padding: 5px 0;
     text-align: right; }
   header [class*="lista-"] a {
     color: #fff;

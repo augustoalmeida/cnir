@@ -33,7 +33,7 @@
     </ul>
   </div>
 
-  <header>
+  <header id="header">
     <div class="container">
       <div class="listas">
         <div class="clearfix">
@@ -96,59 +96,60 @@
       <div class="row">
         <div class="col-sm-9">
           <h1 class="titulo">BEM VINDO AO CNIR - CADASTRO RURAL</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis massa id est molestie, in varius sapien tempor. Maecenas efficitur dignissim lorem, eget luctus orci consectetur nec. Phasellus egestas, dui et tristique vestibulum, eros lectus
-            aliquet nisi, non laoreet arcu metus non diam. Donec vel magna a massa ultricies imperdiet ut non lectus. Morbi feugiat vestibulum risus sed iaculis. Maecenas a odio nec diam tristique faucibus. Nullam congue ultrices condimentum. Cras tempus
-            vulputate mattis. Duis euismod vestibulum mauris, eget fringilla tortor mollis id. Phasellus convallis placerat mauris eget mollis. Curabitur quis nibh eget erat lobortis lacinia. Morbi eleifend tortor eu turpis rhoncus mollis</p>
-          <p>Suspendisse potenti. In porta lacinia egestas. Morbi pellentesque interdum mauris eget finibus. Ut mattis nisl eget mi fermentum consectetur. Suspendisse neque ex, varius sit amet faucibus sit amet, rutrum ut sem. Phasellus quis tincidunt purus,
-            eget malesuada elit. Aenean dapibus tellus sed lectus porta eleifend. Curabitur dignissim, tortor eget sagittis efficitur, mauris tellus luctus ante, et mattis ex lacus vitae tortor. Integer facilisis ex nec enim imperdiet euismod quis eu nisl.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis massa id est molestie, in varius sapien tempor. Maecenas efficitur dignissim lorem, eget luctus orci consectetur nec. Phasellus egestas, dui et tristique vestibulum, eros lectus aliquet nisi, non laoreet arcu metus non diam. Donec vel magna a massa ultricies imperdiet ut non lectus. Morbi feugiat vestibulum risus sed iaculis. Maecenas a odio nec diam tristique faucibus. Nullam congue ultrices condimentum. Cras tempus vulputate mattis. Duis euismod vestibulum mauris, eget fringilla tortor mollis id. Phasellus convallis placerat mauris eget mollis. Curabitur quis nibh eget erat lobortis lacinia. Morbi eleifend tortor eu turpis rhoncus mollis</p>
+          <p>Suspendisse potenti. In porta lacinia egestas. Morbi pellentesque interdum mauris eget finibus. Ut mattis nisl eget mi fermentum consectetur. Suspendisse neque ex, varius sit amet faucibus sit amet, rutrum ut sem. Phasellus quis tincidunt purus, eget malesuada elit. Aenean dapibus tellus sed lectus porta eleifend. Curabitur dignissim, tortor eget sagittis efficitur, mauris tellus luctus ante, et mattis ex lacus vitae tortor. Integer facilisis ex nec enim imperdiet euismod quis eu nisl.</p>
         </div>
 
         <div class="col-sm-3">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="form-group">
-                <label for="usuario" class="control-label">Usuário</label>
-                <input type="text" id="usuario" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label for="senha" class="control-label">Senha</label>
-                <input type="text" id="senha" class="form-control" />
-              </div>
-              <div class="form-group">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" />
-                    Manter conectado
-                  </label>
+          <section>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="form-group">
+                  <label for="usuario" class="control-label">Usuário</label>
+                  <input type="text" id="usuario" class="form-control" placeholder="Informe o seu CPF / CNPJ" />
                 </div>
                 <div class="form-group">
+                  <label for="senha" class="control-label">Senha</label>
+                  <input type="text" id="senha" class="form-control" placeholder="Informe a sua senha" />
+                </div>
+                <div class="form-group text-right">
                   <button type="submit" class="btn btn-primary">Acessar</button>
                 </div>
                 <p>
-                  <a href="">Recuperar senha</a>
+                  Primeiro acesso?
+                  <a href="">Cadastre-se</a>
+                  <br>
+                  <a href="">Recuperar Senha</a>
+                </p>
+                <hr>
+                <p>
+                  <strong>Acesso com Certificado Digital.</strong>
+                  <br>
+                  <span>Clique na imagem para prosseguir.</span>
+                </p>
+                <p class="text-center">
+                  <a href=""><img src="img/selo-certificado.png" alt="Certificado Digital" /></a>
+                </p>
+                <p>
+                  <a href="">Saiba como obter o certificado digital</a>
                 </p>
               </div>
-              <p>
-                <strong>Acesso com Certificado Digital.</strong>
-                <br>
-                <span>Clique na imagem para prosseguir.</span>
-              </p>
-              <p class="text-center">
-                <a href=""><img src="http://dxlfb468n8ekd.cloudfront.net/gsc/CJKOTU/86/30/43/863043ea704f4fdab571ed9d81b2b2e1/images/login/u72.png?token=cb86216f48c1df6d87e478f71b3b3d5e" alt="Certificado Digital" /></a>
-              </p>
-              <p>
-                <a href="">Saiba como obter o certificado digital</a>
-              </p>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
   </article>
 
   <footer id="rodape">
-    <div class="footer">
-      <div class="container">
+    <div class="container">
+      <p class="text-right small">
+        <a href="">
+          <i class="fa fa-caret-up" aria-hidden="true"></i>
+          Voltar para o topo
+        </a>
+      </p>
+      <div class="footer hide">
         <span class="subordinacao">Órgão subordinado</span>
       </div>
     </div>
