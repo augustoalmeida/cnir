@@ -2,10 +2,12 @@
 /* menu */
 .menu {
   margin-top: 1px; }
-  .menu [data-toggle="dropdown"] {
+  .menu [data-toggle="dropdown"]:hover {
     background-color: #F8C300; }
-    .menu [data-toggle="dropdown"]:focus:active {
-      box-shadow: none; }
+  .menu [data-toggle="dropdown"]:focus:active {
+    box-shadow: none; }
+  .menu.open [data-toggle="dropdown"] {
+    background-color: #F8C300; }
   .menu .form-group {
     margin-bottom: 0;
     padding: 10px 20px; }

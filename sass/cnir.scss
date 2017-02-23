@@ -3,10 +3,19 @@
   margin-top: 1px;
 
   [data-toggle="dropdown"] {
-    background-color: #F8C300;
+
+    &:hover {
+      background-color: #F8C300;
+    }
 
     &:focus:active {
       box-shadow: none;
+    }
+  }
+
+  &.open {
+    [data-toggle="dropdown"] {
+      background-color: #F8C300;
     }
   }
 
